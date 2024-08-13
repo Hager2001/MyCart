@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falocon Adventure</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/image/logo-sticky.png"
+    />
+    <!-- -======= bootstrap ====== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- -======= style css ====== -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>  
+<!--============================ Navbar   ================================================-->
+<nav class="nav-bar main-nav-bar">
+  <div class="nav-output">   
+    <div class="bg-gray">
+      <div class="container-fuild d-flex align-items-center justify-content-around ">
+
+        <div class="single-item d-flex align-items-center justify-content-end">
+          <a href="" class="px-3"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="" class="px-3"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" class="px-3"><i class="fa-brands fa-skype"></i></a>
+          <a href="" class="px-3"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="single-item">
+          <span class="flaticon-call">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+          <p> +(02) 0114-9912-318</p>
+        </div>
+
+        <div class="single-item">
+          <span class="flaticon-location">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+          <p> 43 N Area, Ahmed Allam St, Pyramids Garden, Giza, Egypt</p>
+        </div>
+
+      
+        
+        <div class="single-item">
+          <li class="nav-item navsLink dropdown-li">
+            <a class="nav-link" href="#">
+              English
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+            <ul class="dropdown-menu animate__animated animate__fadeIn">
+              <li><a class="dropdown-item" href="#"> English</a></li>    
+            </ul>
+          </li>
+          <li class="nav-item navsLink dropdown-li">
+            <a class="nav-link" href="#">
+            $ US
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+            <ul class="dropdown-menu animate__animated animate__fadeIn">
+              <li><a class="dropdown-item" href="#">  $ US</a></li>    
+            </ul>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <nav class="navbar navbar-expand-lg navbar-light nav-menu-bar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/image/logo-sticky.png" alt="logo-nav">
+        </a>
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-menu">
+
+            <li class="nav-item navsLink">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item navsLink dropdown-li">
+              <a class="nav-link" href="#">Tours 
+                <i class="fa-solid fa-caret-down" style="margin-left: 6px"></i>
+              </a>
+              <ul class="dropdown-menu animate__animated animate__fadeIn">
+                  <li>
+                      <a class="dropdown-item " href="#" style=" color: #4f86c6;">WHAT DO YOU LIKE?</a>
+                      <ul>
+                          <li><a class="dropdown-item" href="#">Safari And Desert</a></li>
+                          <li><a  class="dropdown-item"href="#">Historical And Cultural</a></li>
+                          <li><a  class="dropdown-item"href="#">Red Sea Trips</a></li>
+                          <li><a  class="dropdown-item" href="#">Family Tours</a></li>
+                          <li><a  class="dropdown-item" href="#">Scuba Diving Tours</a></li>
+                          <li><a  class="dropdown-item" href="#">Transfers Only Tours</a></li>
+
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="dropdown-item " href="#"style=" color: #4f86c6;" >WHERE DO YOU WANT TO GO?</a>
+                      <ul>
+                          <li><a  class="dropdown-item" href="#">Hurghada</a></li>
+                          <li><a  class="dropdown-item" href="#">Luxor</a></li>
+                          <li><a  class="dropdown-item" href="#">Cairo</a></li>
+        
+                      </ul>
+                  </li>
+                  
+              </ul>
+          </li>
+
+            <li class="nav-item navsLink">
+              <a class="nav-link" href="#">Packages</a>
+            </li>
+
+            <li class="nav-item navsLink">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item navsLink">
+              <a class="nav-link" href="#"> Blog</a>
+            </li>
+            <li class="nav-item navsLink">
+              <a class="nav-link" href="#"> Services</a>
+            </li>
+            <li class="nav-item navsLink">
+              <a class="nav-link" href="#"> Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn-effect">Inquiry</a>
+        </div> 
+      </div>
+    </nav>
+  </div>
+  </div>
+</nav>
+<!--===================================   Navbar  ============================================-->
+ <!--===========================================================================================-->
+<!-- -====================================  Header Start ===============================================-->
+     
+   <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Blog Details
+        </h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active ">Blog_Details
+            </li>
+        </ol>    
+    </div>
+</div>
+<!-- -================================ Header End ===================================================-->
+<!--=================================== Blog_Details ========================================-->
+<section class="blog-details-container padtobo-50 padrl-50">
+    <div class="container-fluid">
+      <div class="row">
+         <div class="col-xl-8 col-lg-8">     
+          <div class="single-post">
+            <div class="feature-img">
+              <img class="img-fluid"   src="./assets/image/pexels-ahmedmuntasir-912050.jpg"
+                alt="blog-details-img">
+            </div>
+            <div class="blog_details">
+              <h2>
+                Description
+              </h2>
+              <p class="mb-20">
+                We offer a private airport transfer service between ?Luxor international 
+                Airport and Luxor hotels for clients who value comfort, safety, speed and 
+                efficiency whether traveling for business or for pleasure. All our vehicles 
+                are well-maintained and drivers are vetted for their responsible, safe driving.
+              </p>
+          </div>
+          <div class="feature-img">
+            <img class="img-fluid"   src="./assets/image/pexels-keeper-6322875.jpg"
+              alt="blog-details-img">
+          </div>
+          <div class="blog_details">
+            <h2>
+              Description
+            </h2>
+            <span>
+              Day 1:
+            </span>
+
+            <p class="mb-20">
+              At 10: am greeted by our representative at your hotel in Luxor or at Luxor Airport where you are then transported by air conditioned coach to your luxury boat on the nile.
+              There you will be greeted by the staff and shown to your allocated rooms .
+              Lunch on board.
+              After lunch you are transferred to The Temple Of Karnak which is considered to be the biggest site  ever built by man for worshipping a god.
+              Explore the amazing great Hypostyle Hall with its 134 gigantic columns and huge obelisks made by Queen Hatshepsut and King Tutomosis lll and dedicated for the supreme God Amon Ra , each obelisk is over 300 tonnes of a single piece of granite , the temple of Amon adorned with lotus and papyrus designs ,the Granite Scarbeus of Amenophis lll and the Sacred Lake.
+              Then we proceed onto Luxor Temple where you will see its beautiful courtyard and granite statues of Ramses the Great and the Christian and Islamic artifacts displayed on the walls of the temple.
+              . Afternoon tea. 
+              Dinner on board & Belly Dance show. 
+              Overnight on board in luxor
+              (Optional-Not Included) Sound and Light show at Karnak Temple $60 per person
+            </p>
+            <span>
+              Day 2: LUXOR
+            </span>
+
+            <p class="mb-20">
+              After breakfast on board start your tour and explore  The West Bank of Luxor – the Valley of the Kings, which contains 64 royal tombs where the pharaohs selected to have their own eternal lasting place to be . Explore 3 different tombs and enjoy the amazing inscription and colours in the walls.
+              . Visit Colossi Of Memnon then onto the Temple of Queen Hatshepsut at El Dier El Bahari
+              . Return to your cruise and start sailing having dinner and then enjoy the Disco party night
+              (Optional) Hot air Balloon Ride in Luxor and enjoy flying over one of the biggest open museum starts during the sunrise at 4:30 am pick 
+            </p>
+
+            <span>
+              Day 3:EDFU - KOM OMBO
+            </span>
+
+            <p class="mb-20">
+              Breakfast on board. 
+              After breakfast ,explore the Temple of Edfu .which is dedicated to Horus,falcon head God of protection and power for the ancient egyptian .This temple is considered to be one of the most preserved temples in egypt and it shows the mixture of different civilizations together
+              Lunch on Board 
+              Visit Kom Ombo  shared by the two Gods Sobek & Haroeris in Kom Ombo.
+              Afternoon Tea. 
+              Dinner on board & Galabya party overnight on board in Kom Ombo.
+            </p>
+
+            <span>
+              Day 4:
+            </span>
+
+            <p class="mb-20">
+              Breakfast on board and Sail to Aswan arrival Aswan then Visit the High Dam, the Granite Quarries & the Temple of Philae
+              Lunch on board.
+              Sail on the Nile by felucca around Kitchener's Island and Agha Khan Mausoleum.
+              Afternoon Tea. 
+              Dinner on board.
+              Overnight in Aswan.
+            </p>
+            <span>
+              Day 5:
+            </span>
+
+            <p class="mb-20">
+              Breakfast on board. Disembarkation and Transfer you to Aswan airport
+              (Optional-) $130 per person Departures to Abu Simbel visit the Temple of Abu Simbel back to Aswan, The colossal Temple of Abu Simbel built by Ramses II (XIXth. Dynasty) and lately saved from the inundation of the Nile waters in among the glories of ancient Egyptian monuments. The temples were built out of a sandstone rock cliff, and representation of the deities to which each was dedicated is carved on its huge façade. Nearby, also saved, lies the small Temple of the King's wife Nefertari, dedicated to the goddess Hathor.
+            </p>
+        </div>
+          <div class="feature-img">
+            <img class="img-fluid"   src="./assets/image/pexels-yigithan02-5572512.jpg"
+              alt="blog-details-img">
+          </div>
+          <div class="blog_details">
+            <h2>
+              Description
+            </h2>
+            <p class="mb-20">
+              Luxor is a city on the west bank of the Nile River in Southern Egypt.
+
+              It is on the site of ancient Thebes which was the Pharaohs capital at the height of their power.
+              
+              The city surrounds 2 huge surviving ancient monuments graceful Luxor and Karnak Temple
+              
+              This city is a Jewel on the Nile so much to witness and so much history has engrossed this famous city
+              
+              Coming to Egypt, Luxor must be top of your places to visit
+              
+              Your first stop will be to The valley of kings
+            </p>
+            <!-- <div class="feature-img mb-20">
+              <img class="img-fluid"   src="./assets/image/th.jpg"
+                alt="blog-details-img">
+            </div> -->
+            
+            <h5 class="mb-20">THE VALLEY OF THE KINGS</h5>
+            <p class="mb-20">
+              was the royal cemetery for 62 pharaohs and is located on the west bank of the Nile.  The only entrance to this place was a long winding narrow path
+            </p>
+
+            <!-- <div class="feature-img mb-20">
+              <img class="img-fluid"   src="./assets/image/th_2.jpg"
+                alt="blog-details-img">
+            </div> -->
+            
+            <h5 class="mb-20">TUTANKHAMENS TOMB</h5>
+            <p class="mb-20">
+              which you can visit at an extra charge.
+
+              After the Valley of the Kings you visit an Alabaster Factory where you are shown how the different sculptures and vases are made. Alabaster is a mineral or rock that is soft often used for carving and is processed for plaster powder. 
+          </p>
+
+
+
+
+
+          <h5 class="mb-20">TEMPLE OF QUEEN HATSHEPSUT </h5>
+          <p class="mb-20">
+            which is a ancient funerary shrine in upper egypt.
+
+            It is located beneath the cliffs at Deir El Bahari on the west bank of the nile close to the Valley of the Kings.It is dedicated to the sun deity Amun and is situated next to the mortuary temple of Mentuhotep II which served both as an inspiration and later a quarry . It is considered one of the incomparable monuments of ancient Egypt.
+         </p>
+
+
+         <h5 class="mb-20">THE COLOSSI OF MENMON  </h5>
+          <p class="mb-20">
+
+            These are statues of the pharaoh Amenhotep III who reigned in Egypt during the Dynasty XVIII.
+
+            We then have our lunch in a restaurant overlooking the Nile
+            
+            You can opt to take a motor Boat to Banana island which has many different plants and you can buy tea and eat fruit.
+           </p>
+
+
+
+
+
+
+
+
+
+            <!-- <p class="mb-20">
+              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
+              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
+              fraction of the camp price. However, who has the willpower
+            </p>
+            <blockquote class="blogs-quotes">
+              <p class="mb-20">
+                The business consulting process involves a series of steps that consultants follow when working with
+                clients to address specific challenges, improve operations, or achieve organizational goals.
+              </p>
+              <h3 class="author-blog">Mohamed Salah</h3>
+            </blockquote>
+            <p class="mb-20">
+              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
+              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
+              fraction of the camp price. However, who has the willpower
+            </p>
+
+
+            <p class="mb-20">
+              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
+              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
+              fraction of the camp price. However, who has the willpower to actually sit through a
+              self-imposed MCSE training. who has the willpower to actually
+            </p>
+
+            <div class="blog-details-img d-flex mt-30 flex-wrap">
+              <img class="blog-details-img-1" src="./assets/images/egypttours-img/7-min4.jpg" alt="blog-details-img">
+              <img class="blog-details-img2" src="./assets/images/egypttours-img/20211219_142013-14.jpg" alt="blog-details-img">
+            </div>
+           <div class="related-blogs">
+           <h2>Our Begin Now To Beingonl.</h2>
+           <p class="mb-20 mt-15">
+            MCSE boot camps have its supporters and its detractors. Some people do not understand why you
+            should have to spend money on boot camp when you can get the MCSE study materials yourself at a
+            fraction of the camp price. However, who has the willpower to actually sit through a
+            self-imposed MCSE training. who has the willpower to actually
+          </p>
+
+          <p class="mb-20">
+            MCSE boot camps have its supporters and its detractors. Some people do not understand why you
+            should have to spend money on boot camp when you can get the MCSE study materials yourself at a
+            fraction of the camp price. However, who has the willpower to actually sit through a
+            self-imposed MCSE training. who has the willpower to actually
+          </p>
+          </div> -->
+        </div>
+          
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4">
+          <div class="tour-details-right blog-side">
+            <div class="tour-details-deals">
+
+              <h3 class="tour-details-package-title">  - Booking - </h3>
+
+              <div class="tour-details-package-item blog-sidebar">
+                <form id="contact-form" class="tailor-form contact-form">
+               <div class="row"> 
+                  <div class="col-md-12">
+                    <div class="form-item date-box mb-20">
+                      <!-- <label>Departure Date:</label> -->
+                      <input name="name" required="" type="date" class="name" placeholder=""/>
+                    </div>
+                  </div>
+
+      
+                  <div class="col-md-12">
+                    <div class="form-item mb-20">
+                      <input name="name" required="" type="number" class="name" placeholder="Adults" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-item mb-20">
+                      <input name="name" required="" type="number" class="name" placeholder="Children" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="text-center">
+                    <button type="submit" class="btn-effect">
+                      Send Now
+                    </button>
+                  </div>  
+                  </div>
+
+                
+
+
+
+                </div>
+
+
+                  </form>
+              </div>
+
+
+
+
+
+
+
+
+              <h3 class="tour-details-package-title">Related Blog</h3>
+              <div class="tour-details-deals-box mb-20">
+                <div class="tour-details-deals-item">
+                  <div class="tour-details-deals-content d-flex align-items-center mb-20">
+                    <div class="tour-details-deals-thumb pr-20">
+                      <a href="#">
+                        <img   src="./assets/image/th_2.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="tour-details-deals-dsc">
+
+                      <h3 class="tour-details-deals-text">
+                        <a href="#">
+                          Luxor Attractions</a>
+                      </h3>
+                      <span class="post-date"><i class="fa fa-calendar"></i>1 Jun 2024</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tour-details-deals-item">
+                  <div class="tour-details-deals-content d-flex align-items-center mb-20">
+                    <div class="tour-details-deals-thumb">
+                      <a href="#">
+                        <img src="./assets/image/th.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="tour-details-deals-dsc">
+
+                      <h3 class="tour-details-deals-text">
+                        <a href="#"> Hurghada Attractions</a>
+                      </h3>
+                      <span class="post-date"><i class="fa fa-calendar"></i>1 Jun 2024</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tour-details-deals-item">
+                  <div class="tour-details-deals-content d-flex align-items-center mb-20">
+                    <div class="tour-details-deals-thumb">
+                      <a href="#">
+                        <img   src="./assets/image/th_3.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="tour-details-deals-dsc">
+
+                      <h3 class="tour-details-deals-text">
+                        <a href="#"> Aswan Attractions</a>
+                      </h3>
+                      <span class="post-date"><i class="fa fa-calendar"></i>1 Jun 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            <h3 class="tour-details-package-title">Categories</h3>
+           <div class="tour-details-package-item blog-sidebar">
+            <ul>
+              <li class="underline-two"><a href="#">Cairo Attractions</a></li>
+              <li class="underline-two"><a href="#">Aswan Attractions</a></li>
+              <li class="underline-two"><a href="#">Luxor Attractions</a></li>
+              <li class="underline-two"><a href="#"> Oasis in Egypt</a></li>
+              <li class="underline-two"><a href="#">Alexandria Attractions</a></li>
+
+              <li class="underline-two"><a href="#">Hurghada Attractions</a></li>
+              <li class="underline-two"><a href="#"> Sharm El Sheikh Attractions</a></li>
+              <li class="underline-two"><a href="#">Egypt Beaches</a></li>
+              <li class="underline-two"><a href="#">Fayoum Attractions</a></li>
+              <li class="underline-two"><a href="#"> Deserts in Egypt</a></li>
+              <li class="underline-two"><a href="#">Things to do in Egypt</a></li>
+
+             </ul>
+          </div>
+
+           </div> 
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+<!--============================  Blog_Details ================================================-->
+<!--============================ FAQ ================================================-->
+
+<section class="faq clear-fix section__space ">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section-title-wrapper" style="text-align: center;">
+          <span class="section-subtitle mb-20"
+            >Popular Questions
+            </span
+          >
+          <p class=" mb-24">
+            Experience the various exciting tour and travel 
+            packages and Make hotel reservations, find vacation packages, search cheap hotels and events
+      
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">
+              How can I contact Falcon Adventure to book a tour?
+            </span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>
+                
+                You can either contact us via email or our Facebook page to book your tours.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+              Is there an age limit on claiming my child as a dependent?
+            </span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>To claim your child as your dependent, your child must meet either the qualifying child test or the qualifying relative test:
+
+                To meet the qualifying child test, your child must be younger than you and either younger than 19 years old or be a "student" younger than 24 years old as of the end of the calendar year.
+                There's no age limit if your child is "permanently and totally disabled" or meets the qualifying relative test.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Why book on line?</span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>Booking online means your spaces for the trips will be reserved and organized, previous to your arrival.
+
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How do I receive my tour vouchers?</span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              You can either receive your tour voucher via email , or one of our reps can deliver them personally to your hotel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">
+              Do the tours include transfers from my Hotel?
+            </span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>All trips include collection and return to your hotel in an air conditioned vehicle.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+              What if I want to change the day or date of a tour I have booked?</span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse
+                potenti.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover
+                aliens?</span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>The dates can be changed easily for local trips, as long as plenty of notice has been given. Any tours which include flights tickets cannot be changed.
+
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Why book with Falcon Adventure?</span><span class="icon" aria-hidden="true"><i
+                  class="fa-solid fa-chevron-right"></i></span></button>
+            <div class="accordion-content">
+              <p>When booking with Falcon Adventure, you will receive a personalized service from our professional and enthusiastic team. Our aim is to make sure all aspects of your trips are enjoyed. We have a mixture of British and Egyptian management which is the perfect cocktail to ensure great customer service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--============================ FAQ ================================================-->
+ <!-- -===================================================================================-->
+
+<section class="theme-bg fix p-relative ">
+    <div class="cta-shape-bg image-bg"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-4 order-lg-0 order-1"
+          style="visibility: visible"
+        >
+         
+          </div>
+        </div>
+        <div class="col-xl-12 col-lg-12 order-lg-1 order-0">
+          <div class="cta-wrapper cta-style-two">
+            <div class="section-title-wrapper mb-35">
+              <h2 class="section-title small white-text mb-20">
+                HURGHADA TOP ACTIVITIES
+              </h2>
+              <p class="white-text mb-20">
+                Book now your Hurghada excursions and check out our top
+                activities and things to do in Hurghada Red Sea Egypt
+              </p>
+            </div>
+            <div class="cta-btn">
+              <a
+                href="#"
+                class="bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60"
+              >
+                <span class="bd-primary-btn-text">READ MORE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  <!-- ========================================================================= -->
+  <!--===================================   Start Footer ===================================  -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <a><img src="./assets/image/logo-sticky.png" alt="" /></a>
+          <p class="font" style="color: #fff;">
+            FALCON ADVENTURE Is An Established Fully Insured And Licensed
+            Company That Has Continued To Grow Over The Last 12 Years.
+          </p>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>CATEGORIES</h3>
+          <ul class="links font links__font">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Safari And Desert</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Historical And
+                Cultural</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-right"></i> Red Sea Trips</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Family Tours</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Scuba Diving Tours</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Transfers Only
+                Tours</a
+              >
+            </li>
+          </ul>
+        </div>
+  
+        <div class="box">
+          <h3>GENERAL</h3>
+          <ul class="links font links__font">
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>About</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>Contact</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>FAQ</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>Blog</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Favourites</a
+              >
+            </li>
+          </ul>
+        </div>
+  
+        <div class="box">
+          <h3>Day Tours</h3>
+          
+         
+          
+         
+          <ul class="links font links__font">
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>Cairo Day Tours</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i> Aswan Day Tours</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>Luxor Day Tours</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i> Hurghada Day Tours</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-angles-right"></i>Sharm El Shiekh Day Tours</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>QUICK CONTACT</h3>
+          <ul class="links font links__font">
+            <li>
+              <a href="tel:+201117670277"
+                ><i class="fa-solid fa-phone"></i> Phone: +201117670277</a
+              >
+            </li>
+            <li>
+              <a href="tel: +201117670277"
+                ><i class="fa-solid fa-phone"></i> Mobile: +201117670277</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-right"></i>Fax:</a>
+            </li>
+            <li>
+              <a href="mailto:Falconadventure825@Gmail.Com"
+                ><i class="fa-solid fa-envelope"></i> Email:
+                Falconadventure825@Gmail.Com</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-amazon-pay"></i>Secure payments with
+                <img src="./assets/image/payment-cards.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2024 All Rights Reserved: SeoEra</p>
+  </div>
+  
+  <!--===================================  end Footer ===================================  -->
+      <!-- =================================== js ======================= -->
+      <!-- -================================ bootstrap ===================== -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- ================================== jquery ======================= -->
+  
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <!-- =================================== js ======================= -->
+     
+     
+      <script src="./assets/js/maine.js"></script>
+      <script src="./assets/js/header_Swiper.js"></script>
+       <script src="./assets/js/faq.js"></script>
+    </body>
+  </html>
+  

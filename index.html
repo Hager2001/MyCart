@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falocon Adventure</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/image/favicon.png"
+    />
+    <!-- -======= bootstrap ====== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+        <!-- =========== swiper =========== -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    <!-- -======= style css ====== -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+
+  <!--=================================   Start Navbar    ===================================-->
+  <nav class="nav-bar main-nav-bar">
+    <div class="nav-output">   
+      <div class="bg-gray">
+        <div class="container-fuild d-flex align-items-center justify-content-around ">
+  
+          <div class="single-item d-flex align-items-center justify-content-end">
+            <a href="" class="px-3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="px-3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="px-3"><i class="fa-brands fa-skype"></i></a>
+            <a href="" class="px-3"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+            <div class="single-item">
+            <span class="flaticon-call">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <p> +(02) 0114-9912-318</p>
+          </div>
+  
+          <div class="single-item">
+            <span class="flaticon-location">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <p> 43 N Area, Ahmed Allam St, Pyramids Garden, Giza, Egypt</p>
+          </div>
+          <div class="single-item">
+            <li class="nav-item navsLink dropdown-li">
+              <a class="nav-link" href="#">
+                English
+                <i class="fa-solid fa-chevron-up"></i>
+              </a>
+              <ul class="dropdown-menu animate__animated animate__fadeIn">
+                <li><a class="dropdown-item" href="#"> English</a></li>    
+              </ul>
+            </li>
+            <li class="nav-item navsLink dropdown-li">
+              <a class="nav-link" href="#">
+              $ US
+                <i class="fa-solid fa-chevron-up"></i>
+              </a>
+              <ul class="dropdown-menu animate__animated animate__fadeIn">
+                <li><a class="dropdown-item" href="#">  $ US</a></li>    
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+       <nav class="navbar navbar-expand-lg navbar-light nav-menu-bar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/image/logo-sticky.png" alt="logo-nav">
+          </a>
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+  
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-menu">
+  
+              <li class="nav-item navsLink">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+  
+              <li class="nav-item navsLink dropdown-li">
+                <a class="nav-link" href="#">Tours 
+                  <i class="fa-solid fa-caret-down" style="margin-left: 6px"></i>
+                </a>
+                <ul class="dropdown-menu animate__animated animate__fadeIn">
+                    <li>
+                        <a class="dropdown-item " href="#" style=" color: #4f86c6;">WHAT DO YOU LIKE?</a>
+                        <ul>
+                            <li><a class="dropdown-item" href="#">Safari And Desert</a></li>
+                            <li><a  class="dropdown-item"href="#">Historical And Cultural</a></li>
+                            <li><a  class="dropdown-item"href="#">Red Sea Trips</a></li>
+                            <li><a  class="dropdown-item" href="#">Family Tours</a></li>
+                            <li><a  class="dropdown-item" href="#">Scuba Diving Tours</a></li>
+                            <li><a  class="dropdown-item" href="#">Transfers Only Tours</a></li>
+  
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-item " href="#"style=" color: #4f86c6;" >WHERE DO YOU WANT TO GO?</a>
+                        <ul>
+                            <li><a  class="dropdown-item" href="#">Hurghada</a></li>
+                            <li><a  class="dropdown-item" href="#">Luxor</a></li>
+                            <li><a  class="dropdown-item" href="#">Cairo</a></li>
+          
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+  
+              <li class="nav-item navsLink">
+                <a class="nav-link" href="#">Packages</a>
+              </li>
+  
+              <li class="nav-item navsLink">
+                <a class="nav-link" href="#">About</a>
+              </li>
+  
+              <li class="nav-item navsLink">
+                <a class="nav-link" href="#"> Blog</a>
+              </li>
+              <li class="nav-item navsLink">
+                <a class="nav-link" href="#"> Services</a>
+              </li>
+              <li class="nav-item navsLink">
+                <a class="nav-link" href="#"> Contact</a>
+              </li>
+            </ul>
+            <a href="#" class="btn-effect">Inquiry</a>
+          </div> 
+        </div>
+      </nav>
+    </div>
+    </div>
+        </nav>
+  
+  <!--======================================  End Navbar  =========================================-  -->
+ <!-- -====================================  Header Start ===============================================-->
+ <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">PLACE YOUR ORDER
+        </h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active ">PLACE YOUR ORDER
+            </li>
+        </ol>    
+    </div>
+</div>
+<!-- -================================ Header End ===================================================-->
+
+
+
+<!--=================================== my cart  ========================================-->
+<section class="tour-details-package mb-50 padtobo-50">
+  <div class="container">
+    <div class="row">
+
+<div class="tour-gallery">
+  <div class="tour-overview  mt-30" >
+    <div class="tour-heading mb-25 mt-25">
+      <h2>Order </h2>
+    </div>
+  </div>
+  <p class=" border-b "></p>
+
+<table class="table cart"  id="cartItems">
+<thead class="cart-header">
+  <tr>
+    <th>TOUR</th>
+    <th>ADULTS NO.</th>
+    <th>CHILD NO</th>
+    <th>date</th>
+    <!-- <th>Price</th> -->
+    <th colspan="2" class="has-text-right pl-0">Remove</th>
+  </tr>
+</thead>
+<tbody>
+  <!-- <tr class="cart-row">
+    <td class="cart-product-media  cart-product-row">
+      
+        <div class="media">
+          <figure class="media-left my-0 ml-0 mr-3">
+            <p class="image is-64x64">
+              <img src="https://via.placeholder.com/150">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                Best of the Nile - 5 Days-4 Nights>
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </td>
+
+      <td class="cart-product-row cart-qnt">
+      <div class="cart-qnt-counter field has-addons m-0 d-flex">
+                     <button class="btn" type="button" id="productOneQuantityDecrease"><i class="fas fa-minus"></i></button>
+                           
+                  <input type="number" style="width: 25%;
+                  padding: 10px;
+                  height: 42px;" class="form-control fw-bold" min="1" value="1" 
+                 id="productOneQuantity">
+               
+                 <button class="btn" type="button" id="productOneQuantityIncrease"><i class="fas fa-plus"></i></button>
+               
+      </div>
+    </td> 
+
+    <td class="cart-product-row cart-qnt">
+      <div class="cart-qnt-counter field has-addons m-0 d-flex">
+                   <button class="btn" type="button" id="productTwoQuantityDecrease"><i class="fas fa-minus"></i></button>
+                  <input type="number" class="form-control fw-bold "style="width: 25%;
+                  padding: 10px;
+                  height: 42px;" min="" value="0" id="productTwoQuantity">
+                   <button class="btn" type="button" id="productTwoQuantityIncrease"><i class="fas fa-plus"></i></button> 
+              </div>
+    </td>
+
+    <td class="cart-product-row   nowrap">
+              <input name="name" required="" type="date" class="name date_p" placeholder="" >
+              <h5 class="fs-5 fw-bold"><span class="products-price" id="productTwoPrice" style="display: none;">00</span></h5>
+
+           <h5 class="fs-5 fw-bold"><span class="products-price" id="productOnePrice"style="display: none;">00</span></h5>
+          
+    </td>
+    <td class="cart-product-row   cart-qnt ">
+ 
+      <span class="remove-items" id="removeProductOne"><i class="fa-solid fa-circle-xmark fa-2xl"></i></span>
+    </td>
+  </tr> -->
+  <tr class="cart-row">
+    <td class="cart-product-media  cart-product-row">
+      <!-- <a class="nowrap m-0" href="/store/playstation-5-kopiya"> -->
+        <div class="media">
+          <figure class="media-left my-0 ml-0 mr-3">
+            <p class="image is-64x64">
+              <img src="https://via.placeholder.com/150">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                Best of the Nile - 5 Days-4 Nights
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </td>
+    <!-- <td class="cart-product-subtotal has-text-right nowrap">
+      <div class="icart-qnt-counter field has-addons m-0">125$</div>
+    </td> -->
+          <td class="cart-product-row cart-qnt">
+      <div class="cart-qnt-counter field has-addons m-0 d-flex">
+                     <button class="btn" type="button" id="productOneQuantityDecrease"><i class="fas fa-minus"></i></button>
+                           
+                  <input type="number" style="width: 34%;padding: 10px;    height: 46px;" class="form-control fw-bold" min="1" value="1" 
+                 id="productOneQuantity">
+               
+                 <button class="btn" type="button" id="productOneQuantityIncrease"><i class="fas fa-plus"></i></button>
+        <p class="cart_don"> ADULTS </p>
+               
+      </div>
+    </td> 
+
+    <td class="cart-product-row cart-qnt">
+      <div class="cart-qnt-counter field has-addons m-0 d-flex">
+
+                   <button class="btn" type="button" id="productTwoQuantityDecrease"><i class="fas fa-minus"></i></button>
+                  <input type="number" class="form-control fw-bold "style="width: 34%;padding: 10px;    height: 46px;" min="" value="0" id="productTwoQuantity">
+                   <button class="btn" type="button" id="productTwoQuantityIncrease"><i class="fas fa-plus"></i></button> 
+        <p class="cart_don">  CHILD</p>
+             
+                  </div>
+    </td>
+
+    <td class="cart-product-subtotal has-text-right nowrap">
+              <input name="name" required="" type="date" class="name" placeholder="" >
+              <h5 class="fs-5 fw-bold"><span class="products-price" id="productTwoPrice" style="display: none;">00</span></h5>
+
+           <h5 class="fs-5 fw-bold"><span class="products-price" id="productOnePrice"style="display: none;">00</span></h5>
+          
+    </td>
+
+          <td class="cart-product-subtotal has-text-right nowrap">
+              <div class="cart-qnt-counter field has-addons m-0 d-flex">
+              <span class="remove-items" id="removeProductOne"><i class="fa-solid fa-circle-xmark fa-2xl"></i></span>
+                </div>
+    </td>
+  </tr>
+</tbody>
+
+
+
+
+
+</table>
+
+<hr class="my-5">
+
+<div class="row justify-content-between align-items-center bg-white shadow-sm rounded-2 check ">
+  <div class="col-md-12 text-end" style="display: flex;flex-direction: column;gap: 4px;">
+    <h5 class="d-flex justify-content-between">
+      <span>Subtotal: </span>
+      <span>$<span id="subtotalPrice">0</span></span>
+  </h5>
+  <h5 class="d-flex justify-content-between">
+      <span>Tax (10%): </span>
+      <span>$<span id="totalTaxAmount">0</span></span>
+  </h5>
+  <h5 class="d-flex justify-content-between">
+      <span>Total: </span>
+      <span>= $<span id="totalPrice">0</span></span>
+  </h5>
+      <button type="button"  class="btn btn-effect btt mt-3 py-2 px-4 fw-semibold text-uppercase rounded-1">Check Out</button>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="tour-details-package mb-50 padtobo-50">
+    <div class="container">
+      <div class="row">
+
+<div class="tour-gallery">
+    <div class="tour-overview  mt-30">
+      <div class="tour-heading mb-25 mt-25">
+        <h2>Order </h2>
+      </div>
+    </div>
+    <p class=" border-b "></p>
+
+    <div class="cart">
+      <div class="">
+          <div class="row  table-size">
+              <div class="col-12">
+                  <table class="">
+                      <thead>
+                          <tr>
+                              <th class="py-3"> 
+                                TOUR </th>
+                              <th class="py-3"> Price</th>
+                              <th class="py-3"> 	ADULTS NO. </th>
+                              <th class="py-3"> CHILD NO.	 </th>
+
+                              <th class="py-3"> date </th>
+                              <th class="py-3"> Remove </th>
+                          </tr>
+                      </thead>
+                      <tbody class="items_in_cart" id="cartItems">
+                        <tr class="table-row">
+                            <td class="w-25 col-2">
+                              <img src="./assets/image/pexels-keeper-6322875.jpg" class="w-50" alt="">
+                            <p>Best of the Nile - 5 Days-4 Nights</p>
+                            </td>
+                            <td class="Price col-2">125$</td>
+                            
+                            <td class="col-2 ">
+                            <div class="d-flex">
+                                <button class="btn" type="button" id="productOneQuantityDecrease"><i class="fas fa-minus"></i></button>
+                             
+                               <input type="number" style="width: 34%;padding: 10px;    height: 46px;" class="form-control fw-bold" min="1" value="1" 
+                              id="productOneQuantity">
+                            
+                              <button class="btn" type="button" id="productOneQuantityIncrease"><i class="fas fa-plus"></i></button>
+                            
+                            </div> 
+                            
+                            </td>
+                            <td class="col-2">
+                              <div class="d-flex">
+                                
+                                  <button class="btn" type="button" id="productTwoQuantityDecrease"><i class="fas fa-minus"></i></button>
+                                  <input type="number" class="form-control fw-bold "style="width: 34%;padding: 10px;    height: 46px;" min="" value="0" id="productTwoQuantity">
+                                  <button class="btn" type="button" id="productTwoQuantityIncrease"><i class="fas fa-plus"></i></button>
+                              
+                                </div>
+                   
+                             </di> 
+                           </td>
+                            <td class="total col-2"> 
+                              <input name="name" required="" type="date" class="name" placeholder="" style="width: 62%;">
+                                  <h5 class="fs-5 fw-bold"><span class="products-price" id="productTwoPrice" style="display: none;">00</span></h5>
+
+                               <h5 class="fs-5 fw-bold"><span class="products-price" id="productOnePrice"style="display: none;">00</span></h5>
+                              </td>
+                            <td class="col-2">
+                              <span class="remove-items" id="removeProductOne"><i class="fa-solid fa-circle-xmark fa-2xl"></i></span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                  </table>
+              </div>
+              <hr class="my-5">
+
+              <div class="row justify-content-between align-items-center bg-white shadow-sm rounded-2 check ">
+                  <div class="col-md-12 text-end" style="display: flex;flex-direction: column;gap: 4px;">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Subtotal: </span>
+                      <span>$<span id="subtotalPrice">0</span></span>
+                  </h5>
+                  <h5 class="d-flex justify-content-between">
+                      <span>Tax (10%): </span>
+                      <span>$<span id="totalTaxAmount">0</span></span>
+                  </h5>
+                  <h5 class="d-flex justify-content-between">
+                      <span>Total: </span>
+                      <span>= $<span id="totalPrice">0</span></span>
+                  </h5>
+                      <button type="button" style="width:25% ;" class="btn btn-effect mt-3 py-2 px-4 fw-semibold text-uppercase rounded-1">Check Out</button>
+                  </div>
+              </div>
+  
+          </div>
+         
+      </div>
+  </div>
+  </div>
+      </div>
+    </div>
+ </section> -->
+
+<!--========================== my cart ========================================-->
+
+<!--=================================== Tailor ========================================-->
+ 
+<section class="tour-details-package mb-50 padtobo-50">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <div class="tour-details-package-item">
+            <h3 class="tour-details-package-title " style="color: #fff;">
+                Contact information
+            </h3>
+          <div class="col-12 tour-details-package-content ">
+           <div class="tailor-box">
+            <form id="contact-form" class="tailor-form contact-form">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-item mb-20">
+                    <input name="name" required="" type="text" class="name" placeholder=" Name" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-item mb-20">
+                    <input name="phone" required="" type="text" class="name" placeholder=" Phone" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-item mb-20">
+                    <input name="email" required="" type="email" class="email" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item mb-20">
+                    <select name="Country" class="form-select" aria-label="Default select example">
+                      <option selected>Country</option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Aland Islands">Aland Islands</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antarctica">Antarctica</option>
+                      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Armenia">Armenia</option>
+                      <option value="Aruba">Aruba</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Austria">Austria</option>
+                      <option value="Azerbaijan">Azerbaijan</option>
+                      <option value="Bahamas">Bahamas</option>
+                      <option value="Bahrain">Bahrain</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="Barbados">Barbados</option>
+                      <option value="Belarus">Belarus</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Belize">Belize</option>
+                      <option value="Benin">Benin</option>
+                      <option value="Bermuda">Bermuda</option>
+                      <option value="Bhutan">Bhutan</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                      <option value="Botswana">Botswana</option>
+                      <option value="Bouvet Island">Bouvet Island</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                      <option value="Brunei Darussalam">Brunei Darussalam</option>
+                      <option value="Bulgaria">Bulgaria</option>
+                      <option value="Burkina Faso">Burkina Faso</option>
+                      <option value="Burundi">Burundi</option>
+                      <option value="Cambodia">Cambodia</option>
+                      <option value="Cameroon">Cameroon</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Cape Verde">Cape Verde</option>
+                      <option value="Cayman Islands">Cayman Islands</option>
+                      <option value="Central African Republic">Central African Republic</option>
+                      <option value="Chad">Chad</option>
+                      <option value="Chile">Chile</option>
+                      <option value="China">China</option>
+                      <option value="Christmas Island">Christmas Island</option>
+                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Comoros">Comoros</option>
+                      <option value="Congo">Congo</option>
+                      <option value="Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo
+                      </option>
+                      <option value="Cook Islands">Cook Islands</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Curacao">Curacao</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">Dominican Republic</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                      <option value="France">France</option>
+                      <option value="French Guiana">French Guiana</option>
+                      <option value="French Polynesia">French Polynesia</option>
+                      <option value="French Southern Territories">French Southern Territories</option>
+                      <option value="Gabon">Gabon</option>
+                      <option value="Gambia">Gambia</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Gibraltar">Gibraltar</option>
+                      <option value="Greece">Greece</option>
+                      <option value="Greenland">Greenland</option>
+                      <option value="Grenada">Grenada</option>
+                      <option value="Guadeloupe">Guadeloupe</option>
+                      <option value="Guam">Guam</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Guernsey">Guernsey</option>
+                      <option value="Guinea">Guinea</option>
+                      <option value="Guinea-Bissau">Guinea-Bissau</option>
+                      <option value="Guyana">Guyana</option>
+                      <option value="Haiti">Haiti</option>
+                      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="Hungary">Hungary</option>
+                      <option value="Iceland">Iceland</option>
+                      <option value="India">India</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                      <option value="Iraq">Iraq</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Isle of Man">Isle of Man</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Jamaica">Jamaica</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Jersey">Jersey</option>
+                      <option value="Jordan">Jordan</option>
+                      <option value="Kazakhstan">Kazakhstan</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kiribati">Kiribati</option>
+                      <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of
+                      </option>
+                      <option value="Korea, Republic of">Korea, Republic of</option>
+                      <option value="Kosovo">Kosovo</option>
+                      <option value="Kuwait">Kuwait</option>
+                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+                      <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                      <option value="Latvia">Latvia</option>
+                      <option value="Lebanon">Lebanon</option>
+                      <option value="Lesotho">Lesotho</option>
+                      <option value="Liberia">Liberia</option>
+                      <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                      <option value="Liechtenstein">Liechtenstein</option>
+                      <option value="Lithuania">Lithuania</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Macao">Macao</option>
+                      <option value="Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic
+                        of</option>
+                      <option value="Madagascar">Madagascar</option>
+                      <option value="Malawi">Malawi</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Maldives">Maldives</option>
+                      <option value="Mali">Mali</option>
+                      <option value="Malta">Malta</option>
+                      <option value="Marshall Islands">Marshall Islands</option>
+                      <option value="Martinique">Martinique</option>
+                      <option value="Mauritania">Mauritania</option>
+                      <option value="Mauritius">Mauritius</option>
+                      <option value="Mayotte">Mayotte</option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                      <option value="Moldova, Republic of">Moldova, Republic of</option>
+                      <option value="Monaco">Monaco</option>
+                      <option value="Mongolia">Mongolia</option>
+                      <option value="Montenegro">Montenegro</option>
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Morocco">Morocco</option>
+                      <option value="Mozambique">Mozambique</option>
+                      <option value="Myanmar">Myanmar</option>
+                      <option value="Namibia">Namibia</option>
+                      <option value="Nauru">Nauru</option>
+                      <option value="Nepal">Nepal</option>
+                      <option value="Netherlands">Netherlands</option>
+                      <option value="Netherlands Antilles">Netherlands Antilles</option>
+                      <option value="New Caledonia">New Caledonia</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Niger">Niger</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Niue">Niue</option>
+                      <option value="Norfolk Island">Norfolk Island</option>
+                      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                      <option value="Norway">Norway</option>
+                      <option value="Oman">Oman</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="Palau">Palau</option>
+                      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                      <option value="Panama">Panama</option>
+                      <option value="Papua New Guinea">Papua New Guinea</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Peru">Peru</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Pitcairn">Pitcairn</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Puerto Rico">Puerto Rico</option>
+                      <option value="Qatar">Qatar</option>
+                      <option value="Reunion">Reunion</option>
+                      <option value="Romania">Romania</option>
+                      <option value="Russian Federation">Russian Federation</option>
+                      <option value="Rwanda">Rwanda</option>
+                      <option value="Saint Barthelemy">Saint Barthelemy</option>
+                      <option value="Saint Helena">Saint Helena</option>
+                      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                      <option value="Saint Lucia">Saint Lucia</option>
+                      <option value="Saint Martin">Saint Martin</option>
+                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                      <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                      <option value="Samoa">Samoa</option>
+                      <option value="San Marino">San Marino</option>
+                      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+                      <option value="Senegal">Senegal</option>
+                      <option value="Serbia">Serbia</option>
+                      <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+                      <option value="Seychelles">Seychelles</option>
+                      <option value="Sierra Leone">Sierra Leone</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Sint Maarten">Sint Maarten</option>
+                      <option value="Slovakia">Slovakia</option>
+                      <option value="Slovenia">Slovenia</option>
+                      <option value="Solomon Islands">Solomon Islands</option>
+                      <option value="Somalia">Somalia</option>
+                      <option value="South Africa">South Africa</option>
+                      <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich
+                        Islands</option>
+                      <option value="South Sudan">South Sudan</option>
+                      <option value="Spain">Spain</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sudan">Sudan</option>
+                      <option value="Suriname">Suriname</option>
+                      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                      <option value="Swaziland">Swaziland</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Switzerland">Switzerland</option>
+                      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                      <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                      <option value="Tajikistan">Tajikistan</option>
+                      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Timor-Leste">Timor-Leste</option>
+                      <option value="Togo">Togo</option>
+                      <option value="Tokelau">Tokelau</option>
+                      <option value="Tonga">Tonga</option>
+                      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                      <option value="Tunisia">Tunisia</option>
+                      <option value="Turkey">Turkey</option>
+                      <option value="Turkmenistan">Turkmenistan</option>
+                      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                      <option value="Tuvalu">Tuvalu</option>
+                      <option value="Uganda">Uganda</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="United States">United States</option>
+                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Uzbekistan">Uzbekistan</option>
+                      <option value="Vanuatu">Vanuatu</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Viet Nam">Viet Nam</option>
+                      <option value="Virgin Islands, British">Virgin Islands, British</option>
+                      <option value="Virgin Islands, U.s.">Virgin Islands, U.s.</option>
+                      <option value="Wallis and Futuna">Wallis and Futuna</option>
+                      <option value="Western Sahara">Western Sahara</option>
+                      <option value="Yemen">Yemen</option>
+                      <option value="Zambia">Zambia</option>
+                      <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item mb-20">   
+                    <input name="name" required="" type="text" class="name" placeholder=" City Name" />
+                    <!-- <input type="tel" name="City Name" required> -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item mb-20">
+                    <input name="name" required="" type="text" class="name" placeholder=" Address" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item mb-20">
+                    <input name="name" required="" type="text" class="name" placeholder=" Pickup Point / Hotel Name" />
+                  </div>
+                </div>
+                <!-- <div class="col-md-3">
+                  <div class="form-item date-box mb-20">
+                    <label>Arrival Date:</label>
+                    <input name="name" required="" type="date" class="name" placeholder=""/>
+                  </div>
+                </div> -->
+                <div class="col-md-3">
+                  <div class="form-item date-box mb-20">
+                    <!-- <label>Departure Date:</label> -->
+                    <input name="name" required="" type="date" class="name" placeholder=""/>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-item mb-20">
+                    <input name="name" required="" type="number" class="name" placeholder="Adults ( 18+years )
+                    " />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-item mb-20">
+                      <input name="name" required="" type="number" class="name" placeholder="Kids ( 15years )" />
+                    </div>
+                  </div>
+                <div class="col-md-3">
+                  <div class="form-item mb-20">
+                    <input name="name" required="" type="number" class="name" placeholder="Children ( 5+years )
+                    " />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    
+                  
+                  <div class="form-item mb-20 text-msg">
+                    <textarea name="message" required="" rows="1" class="message" placeholder="Message"></textarea>
+                  </div>
+
+            
+
+                     <p>Payment Method</p>
+                     <hr>
+                  <div class="tour-details-service-checkbox mb-20  d-flex align-items-center " style="gap: 19px; flex-wrap: wrap;">
+                   <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                   <span>
+                    Pay 100% (GBP1150.00)
+
+                    </span>
+
+                    <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                    <span>
+                      Pay 75% (862.50 GBP)
+                     </span>
+
+                     <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                     <span>
+                      Pay 50% (575.00 GBP)
+
+                      </span>
+  
+                      <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                      <span>
+                        
+                  Pay 25% (287.50 GBP)
+                       </span>
+                       <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                       <span>
+                         Pay Later
+                        </span>
+    
+                  
+                
+                  </div>
+
+                <div class="tour-details-service-checkbox  mb-20 d-flex align-items-center">
+                    <input type="checkbox">
+                 <span>
+                  I accept terms and conditions and general policy.
+                </span>
+                
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+                  <!-- <div class="tour-details-service-checkbox  d-flex align-items-center">
+                    <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                 <span>
+                  Pay Later
+                </span>
+                
+                  </div> <div class="tour-details-service-checkbox  d-flex align-items-center">
+                    <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                 <span>
+                  Pay Later
+                </span>
+                
+                  </div> -->
+
+
+<!-- 
+                  <div class="tour-details-service-checkbox  d-flex align-items-center">
+                    <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                    
+                      <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                      <label class="choice" for="Field5_0">First Choice</label>
+                    
+                    <div>
+                      <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+                      <label class="choice" for="Field5_1">Second Choice</label>
+                    </div>
+                    <div>
+                      <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+                      <label class="choice" for="Field5_2">Third Choice</label>
+                    </div> 
+                  </div> -->
+
+                  <div class="text-center">
+                    <button type="submit" class="btn-effect">
+                      Send Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!--============================  Tailor ================================================-->
+
+  <!-- ============================ FAQ ================================================-->
+   <section class="faq clear-fix  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="section-title-wrapper" style="text-align: center;">
+            <span class="section-subtitle mb-20"
+              >Popular Questions
+              </span>
+            <p class="p__text mb-24">
+              Experience the various exciting tour and travel 
+              packages and Make hotel reservations, find vacation packages, search cheap hotels and events    
+            </p>
+          </div>
+        </div>   
+        <div class="col-lg-6">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">
+                How can I contact Falcon Adventure to book a tour?
+              </span><span class="icon" aria-hidden="true"><i
+                    class="fa-solid fa-chevron-right"></i></span></button>
+              <div class="accordion-content">
+                <p>
+                  You can either contact us via email or our Facebook page to book your tours.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+                Is there an age limit on claiming my child as a dependent?
+              </span><span class="icon" aria-hidden="true"><i
+                    class="fa-solid fa-chevron-right"></i></span></button>
+              <div class="accordion-content">
+                <p>To claim your child as your dependent, your child must meet either the qualifying 
+                  child test or the qualifying relative test:
+                  To meet the qualifying child test, your child must be younger than you and either 
+                  younger than 19 years old or be a "student" younger than 24 years old as of the end
+                   of the calendar year. There's no age limit if your child is "permanently and totally disabled" 
+                   or meets the qualifying relative test.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title">Why book on line?</span>
+                <span class="icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <p>Booking online means your spaces for the trips will be reserved and organized
+                  , previous to your arrival.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false">
+                <span class="accordion-title">How do I receive my tour vouchers?</span>
+                <span class="icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                You can either receive your tour voucher via email , or one of our reps can
+                 deliver them personally 
+                to your hotel.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">
+                Do the tours include transfers from my Hotel?
+              </span><span class="icon" aria-hidden="true"><i
+                    class="fa-solid fa-chevron-right"></i></span></button>
+              <div class="accordion-content">
+                <p>All trips include collection and return to your hotel in an air conditioned vehicle.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+                DO I NEED A VISA FOR THIS EXCURSION?</span>
+                <span class="icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <p>If travelling to Hurghada, a Visa will be required for all. For Sharm El Sheikh you will only require a Visa if staying longer than 3 weeks or if you travel outside Sharm El Sheikh, St.Catherine's and Dahab.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title">Will we ever discover aliens?</span>
+                <span class="icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <p>The dates can be changed easily for local trips, as long as plenty of notice has been given.
+                   Any tours which include flights tickets cannot be changed.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false">
+                <span class="accordion-title">Why book with Falcon Adventure?</span>
+                <span class="icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <p>When booking with Falcon Adventure, you will receive a personalized service from our professional
+                   and enthusiastic team. Our aim is to make sure all aspects of your trips are enjoyed. We have a 
+                   mixture of British and Egyptian management which is the perfect cocktail to ensure great customer
+                    service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--============================ FAQ ================================================-->
+  
+  <!-- -===================================================================================-->
+  
+  <section class="theme-bg  p-relative section-space ">
+      <div class="cta-shape-bg image-bg"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-6 col-lg-4 order-lg-0 order-1"
+            style="visibility: visible">
+            </div>
+          </div>
+          <div class="col-xl-12 col-lg-12 order-lg-1 order-0">
+            <div class="cta-wrapper cta-style-two">
+              <div class="section-title-wrapper mb-20">
+                <h2 class="section-title small white-text mb-20">
+                  HURGHADA TOP ACTIVITIES
+                </h2>
+                <p class="white-text mb-20">
+                  Book now your Hurghada excursions and check out our top
+                  activities and things to do in Hurghada Red Sea Egypt
+                </p>
+              </div>
+              <div class="cta-btn">
+                <a
+                  href="#"
+                  class="bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60 btn-effect">
+                  <span class="bd-primary-btn-text">READ MORE</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- ========================================================================= -->
+        <!--========================================  Start Footer ====================================-->
+                   <footer class="footer">
+                    <div class="overlay"></div>
+                    <div class="container">
+                      <div class="row footer-row">
+                        <div class="col-sm-12 col-lg-3 mb-30">
+                
+                          <div class="footer-widget">
+                            <div class="footer-logo">
+                              <img src="./assets/image/logo-sticky.png" />
+                            </div>
+                            <p class="mb-30 mt-30">
+                                FALCON ADVENTURE Is An Established Fully Insured And Licensed Company That Has
+                                 Continued To Grow Over The Last 12
+                            </p>
+                            <div class="contact-info">
+                              <div class="single-contact mb-0">
+                                <div class="info-cont">
+                                  <ul class="social-media">
+                                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" class="instagram"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" col-sm-12 col-lg-3 mb-30">
+                          <div class="footer-widget">
+                            <h4>CATEGORIES</h4>
+                            <div class="line-footer"></div>
+                            <div class="row">
+                              <div class="col">
+                                <ul class="footer-link mb-0">
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span>Safari And Desert
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span> Historical And Cultural
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span> Red Sea Trips
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span> Family Tours
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span> Scuba Diving Tours
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" col-sm-12 col-lg-3 mb-30">                     
+                          <div class="footer-widget mb-0">
+                            <h4>GENERAL</h4>
+                            <div class="line-footer"></div>
+                            <div class="row">
+                              <div class="col">
+                                <ul class="footer-link mb-0">
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span> About Us
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span>  Contact
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span>   FAQ
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span>  Blog
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <span><i class="fas fa-caret-right"></i></span>  Favourites
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="col-sm-12 col-lg-3">
+                          <div class="footer-widget">
+                            <h4>QUICK CONTACT</h4>
+                            <div class="line-footer"></div>
+                            <div class="row">
+                                <div class="col">
+                                  <ul class="footer-link mb-0">
+                                    <li>
+                                      <a href="#">
+                                        <span><i class="fa-solid fa-phone"></i></span> Phone: +201117670277
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span><i class="fa-solid fa-phone"></i></span> Mobile: +201117670277
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span><i class="fas fa-caret-right"></i></span> Fax:
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span><i class="fa-solid fa-envelope"></i> </i></span> Email:
+                                        Falconadventure825@Gmail.Com
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span><i class="fa-brands fa-amazon-pay"></i></span> Secure payments with
+                                        <img src="./assets/image/payment-cards.png" alt="" class="logo" />
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                        </div>
+                        </div> 
+                    </div>
+                    <div class="footer-bar">
+                      <div class="container">
+                        <div class="footer-copy">
+                          <div class="copyright">
+                            Copyright © 2024 <a href="https://www.seoera.net/" target="_blank">SeoEra</a> 
+                            All Right Reserved
+                          </div>
+                        </div>
+                      </div>  
+                    </div>  
+                  </footer>
+        <!--========================================  End Footer ===============================================-->
+    
+      <!-- =================================== js ======================= -->
+      <!-- -================================ bootstrap ===================== -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+     <!-- ================================== jquery ======================= -->
+  
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+      <!-- =================================== js ======================= -->
+      <script src="./assets/js/faq.js"></script>
+      <script src="./assets/js/shopping-cart.js"></script>
+  
+      <script src="./assets/js/maine.js"></script>
+    </body>
+  </html>
+  
