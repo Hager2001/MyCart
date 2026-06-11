@@ -1,11 +1,12 @@
 (function () {
   "use strict";
 
-  document
-    .querySelector("#navbarSideCollapse")
-    .addEventListener("click", function () {
+  var navToggle = document.querySelector("#navbarSideCollapse");
+  if (navToggle) {
+    navToggle.addEventListener("click", function () {
       document.querySelector(".offcanvas-collapse").classList.toggle("open");
     });
+  }
 })();
 
 $(function () {
@@ -56,8 +57,11 @@ let priceGap = 1000;
 
 priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {
-    let minPrice = parseInt(priceInput[0].value),
-      maxPrice = parseInt(priceInput[1].value);
+    let minPrice = parseInt(priceInput[0].value, 10),
+      maxPrice = parseInt(priceInput[1].value, 10);
+
+    if (isNaN(minPrice) || isNaN(maxPrice)) return;
+    if (!range) return;
 
     if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
       if (e.target.className === "input-min") {
@@ -72,7 +76,10 @@ priceInput.forEach((input) => {
 });
 
 function rangeSlide(value) {
-  document.getElementById("rangeValue").innerHTML = value;
+  var el = document.getElementById("rangeValue");
+  if (el) {
+    el.innerHTML = value;
+  }
 }
 // Siwper JS
 
