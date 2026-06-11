@@ -1,3 +1,7 @@
+/**
+ * Shared cart utilities
+ */
+
 function productQuantityUpdate(isIncrease, productQuantityFieldId) {
   const productQuantityField = document.getElementById(productQuantityFieldId);
   const productPreviusQuantity = parseInt(productQuantityField.value);
@@ -57,126 +61,52 @@ function updateEverythings() {
 
 updateEverythings();
 
-// ================================
+// Data-driven product configuration — add new products here instead of
+// duplicating event listener blocks.
+var cartProducts = [
+  {
+    quantityFieldId: "productOneQuantity",
+    priceId: "productOnePrice",
+    unitPrice: 1250,
+    increaseBtn: "productOneQuantityIncrease",
+    decreaseBtn: "productOneQuantityDecrease",
+    removeBtn: "removeProductOne",
+    removeTargetId: "cartItems",
+  },
+  {
+    quantityFieldId: "productTwoQuantity",
+    priceId: "productTwoPrice",
+    unitPrice: 50,
+    increaseBtn: "productTwoQuantityIncrease",
+    decreaseBtn: "productTwoQuantityDecrease",
+    removeBtn: "removeProductTwo",
+    removeTargetId: "productTwo",
+  },
+];
 
-document
-  .getElementById("productOneQuantityIncrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productOneQuantity";
-    const productPriceId = "productOnePrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      true,
-      productQuantityFieldId
-    );
-    productPriceUpdate(1250, productCurrentQuantity, productPriceId);
-  });
+function bindProductHandlers(product) {
+  var increaseEl = document.getElementById(product.increaseBtn);
+  if (increaseEl) {
+    increaseEl.addEventListener("click", function () {
+      var qty = productQuantityUpdate(true, product.quantityFieldId);
+      productPriceUpdate(product.unitPrice, qty, product.priceId);
+    });
+  }
 
-document
-  .getElementById("productOneQuantityDecrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productOneQuantity";
-    const productPriceId = "productOnePrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      false,
-      productQuantityFieldId
-    );
-    productPriceUpdate(1250, productCurrentQuantity, productPriceId);
-  });
+  var decreaseEl = document.getElementById(product.decreaseBtn);
+  if (decreaseEl) {
+    decreaseEl.addEventListener("click", function () {
+      var qty = productQuantityUpdate(false, product.quantityFieldId);
+      productPriceUpdate(product.unitPrice, qty, product.priceId);
+    });
+  }
 
-document
-  .getElementById("removeProductOne")
-  .addEventListener("click", function () {
-    removeProductById("cartItems");
-  });
+  var removeEl = document.getElementById(product.removeBtn);
+  if (removeEl) {
+    removeEl.addEventListener("click", function () {
+      removeProductById(product.removeTargetId);
+    });
+  }
+}
 
-document
-  .getElementById("productTwoQuantityIncrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productTwoQuantity";
-    const productPriceId = "productTwoPrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      true,
-      productQuantityFieldId
-    );
-    productPriceUpdate(50, productCurrentQuantity, productPriceId);
-  });
-
-document
-  .getElementById("productTwoQuantityDecrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productTwoQuantity";
-    const productPriceId = "productTwoPrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      false,
-      productQuantityFieldId
-    );
-    productPriceUpdate(50, productCurrentQuantity, productPriceId);
-  });
-
-document
-  .getElementById("removeProductTwo")
-  .addEventListener("click", function () {
-    removeProductById("productTwo");
-  });
-
-// ===========================================================
-
-document
-  .getElementBy("productOneQuantityIncrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productOneQuantity";
-    const productPriceId = "productOnePrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      true,
-      productQuantityFieldId
-    );
-    productPriceUpdate(1250, productCurrentQuantity, productPriceId);
-  });
-
-document
-  .getElementById("productOneQuantityDecrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productOneQuantity";
-    const productPriceId = "productOnePrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      false,
-      productQuantityFieldId
-    );
-    productPriceUpdate(1250, productCurrentQuantity, productPriceId);
-  });
-
-document
-  .getElementById("removeProductOne")
-  .addEventListener("click", function () {
-    removeProductById("cartItems");
-  });
-
-document
-  .getElementById("productTwoQuantityIncrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productTwoQuantity";
-    const productPriceId = "productTwoPrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      true,
-      productQuantityFieldId
-    );
-    productPriceUpdate(50, productCurrentQuantity, productPriceId);
-  });
-
-document
-  .getElementById("productTwoQuantityDecrease")
-  .addEventListener("click", function () {
-    const productQuantityFieldId = "productTwoQuantity";
-    const productPriceId = "productTwoPrice";
-    const productCurrentQuantity = productQuantityUpdate(
-      false,
-      productQuantityFieldId
-    );
-    productPriceUpdate(50, productCurrentQuantity, productPriceId);
-  });
-
-document
-  .getElementById("removeProductTwo")
-  .addEventListener("click", function () {
-    removeProductById("productTwo");
-  });
+cartProducts.forEach(bindProductHandlers);

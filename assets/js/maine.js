@@ -37,8 +37,9 @@ $(function () {
     });
   });
 });
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+
+// Shared Swiper factory — avoids duplicating common options for each slider.
+var swiperDefaults = {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -48,7 +49,33 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+};
+
+function createSwiper(selector, overrides) {
+  var opts = Object.assign({}, swiperDefaults, overrides);
+  if (overrides && overrides.pagination) {
+    opts.pagination = Object.assign({}, swiperDefaults.pagination, overrides.pagination);
+  }
+  return new Swiper(selector, opts);
+}
+
+var swiper = createSwiper(".mySwiper", {
+  slidesPerView: 1,
 });
+
+var swiperCard = createSwiper(".card-content", {
+  spaceBetween: 32,
+  grabCursor: true,
+  pagination: {
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    600: { slidesPerView: 2 },
+    968: { slidesPerView: 3 },
+  },
+});
+
+// Price range slider
 const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
   range = document.querySelector(".slider .progress");
@@ -74,28 +101,3 @@ priceInput.forEach((input) => {
 function rangeSlide(value) {
   document.getElementById("rangeValue").innerHTML = value;
 }
-// Siwper JS
-
-let swiperCard = new Swiper(".card-content", {
-  loop: true,
-  spaceBetween: 32,
-  grabCursor: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    600: { slidesPerView: 2 },
-    968: { slidesPerView: 3 },
-  },
-});
-
-// =========================================================
